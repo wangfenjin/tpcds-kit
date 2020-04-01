@@ -1,4 +1,3 @@
--- start query 1 in stream 0 using template query24.tpl
 with ssales as
 (select c_last_name
       ,c_first_name
@@ -25,7 +24,7 @@ where ss_ticket_number = sr_ticket_number
   and c_current_addr_sk = ca_address_sk
   and c_birth_country <> upper(ca_country)
   and s_zip = ca_zip
-and s_market_id=7
+  and s_market_id = 7
 group by c_last_name
         ,c_first_name
         ,s_store_name
@@ -41,12 +40,13 @@ select c_last_name
       ,s_store_name
       ,sum(netpaid) paid
 from ssales
-where i_color = 'orchid'
+where i_color = 'chiffon'
 group by c_last_name
         ,c_first_name
         ,s_store_name
 having sum(netpaid) > (select 0.05*avg(netpaid)
-                                 from ssales)
+                           from ssales)
 order by c_last_name
         ,c_first_name
         ,s_store_name
+

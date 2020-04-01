@@ -40,4 +40,4 @@ tags
 # Flat files
 *.dat
 
-queries/
+# queries/
