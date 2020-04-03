@@ -1,0 +1,739 @@
+nohup: ignoring input
+./queries/query_10.sql
+Code: 62. DB::Exception: Syntax error: failed at position 627 (line 24, col 16): store_sales,date_dim
+          where c.c_customer_sk = ss_customer_sk and
+                ss_sold_date_sk = d_date_sk and
+                d_year = 2002 and
+    . Expected one of: alias, AND, OR, token, AS, NOT, BETWEEN, LIKE, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, Comma, Dot, QuestionMark
+
+./queries/query_11.sql
+Code: 62. DB::Exception: Syntax error: failed at position 76 (line 2, col 20): (
+ select c_customer_id customer_id
+       ,c_first_name customer_first_name
+       ,c_last_name customer_last_name
+       ,c_preferred_cust_flag customer_prefe. Expected identifier
+
+./queries/query_12.sql
+Code: 62. DB::Exception: Syntax error: failed at position 279 (line 9, col 11): (partition by i_class) as revenueratio
+from	
+	web_sales
+    	,item 
+    	,date_dim
+where 
+	ws_item_sk = i_item_sk 
+  	and i_category in ('Jewelry', 'Sports', 'B. Expected one of: expression to parallel process bitmap, UNION ALL, token, FROM, PREWHERE, WHERE, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, FORMAT, TEALIMIT, Comma, ORDER BY, INTO OUTFILE, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_13.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.64 GiB (attempt to allocate chunk of 536870912 bytes), maximum: 9.31 GiB. 
+14.770
+./queries/query_14.sql
+Code: 62. DB::Exception: Syntax error: failed at position 79 (line 3, col 2): (select i_item_sk ss_item_sk
+ from item,
+ (select iss.i_brand_id brand_id
+     ,iss.i_class_id class_id
+     ,iss.i_category_id category_id
+ from store_sales
+  . Expected identifier
+
+./queries/query_15.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.51 GiB (attempt to allocate chunk of 268435456 bytes), maximum: 9.31 GiB. 
+2.932
+./queries/query_16.sql
+Code: 62. DB::Exception: Syntax error: failed at position 370 (line 13, col 44): days)
+and cs1.cs_ship_date_sk = d_date_sk
+and cs1.cs_ship_addr_sk = ca_address_sk
+and ca_state = 'IL'
+and cs1.cs_call_center_sk = cc_call_center_sk
+and cc_count. Expected one of: alias, AND, OR, token, AS, NOT, BETWEEN, LIKE, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, Comma, QuestionMark
+
+./queries/query_17.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.31 GiB (attempt to allocate chunk of 16777216 bytes), maximum: 9.31 GiB. 
+4.417
+./queries/query_18.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.44 GiB (attempt to allocate chunk of 134217728 bytes), maximum: 9.31 GiB. 
+5.629
+./queries/query_19.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.94 GiB (attempt to allocate chunk of 1073741824 bytes), maximum: 9.31 GiB. 
+16.508
+./queries/query_1.sql
+Code: 62. DB::Exception: Syntax error: failed at position 86 (line 3, col 1): (select sr_customer_sk as ctr_customer_sk
+,sr_store_sk as ctr_store_sk
+,sum(SR_FEE) as ctr_total_return
+from store_returns
+,date_dim
+where sr_returned_date_sk =. Expected identifier
+
+./queries/query_20.sql
+Code: 62. DB::Exception: Syntax error: failed at position 286 (line 9, col 12): (partition by i_class) as revenueratio
+ from	catalog_sales
+     ,item 
+     ,date_dim
+ where cs_item_sk = i_item_sk 
+   and i_category in ('Jewelry', 'Sports', . Expected one of: expression to parallel process bitmap, UNION ALL, token, FROM, PREWHERE, WHERE, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, FORMAT, TEALIMIT, Comma, ORDER BY, INTO OUTFILE, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_21.sql
+Code: 62. DB::Exception: Syntax error: failed at position 763 (line 19, col 59): days)
+                    and (cast ('1998-04-08' as date) + 30 days)
+   group by w_warehouse_name, i_item_id) x
+ where (case when inv_before > 0 
+             . Expected one of: alias, AND, OR, token, AS, NOT, BETWEEN, LIKE, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, Comma, QuestionMark
+
+./queries/query_22.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.47 GiB (attempt to allocate chunk of 268435456 bytes), maximum: 9.31 GiB. 
+2.295
+./queries/query_23.sql
+Code: 62. DB::Exception: Syntax error: failed at position 85 (line 3, col 2): (select substr(i_item_desc,1,30) itemdesc,i_item_sk item_sk,d_date solddate,count(*) cnt
+  from store_sales
+      ,date_dim 
+      ,item
+  where ss_sold_date_sk. Expected identifier
+
+./queries/query_24.sql
+Code: 62. DB::Exception: Syntax error: failed at position 72 (line 3, col 1): (select c_last_name
+      ,c_first_name
+      ,s_store_name
+      ,ca_state
+      ,s_state
+      ,i_color
+      ,i_current_price
+      ,i_manager_id
+      ,i_un. Expected identifier
+
+./queries/query_25.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.32 GiB (attempt to allocate chunk of 16777216 bytes), maximum: 9.31 GiB. 
+4.483
+./queries/query_26.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.40 GiB (attempt to allocate chunk of 134217728 bytes), maximum: 9.31 GiB. 
+4.918
+./queries/query_27.sql
+Received exception from server (version 19.5.3):
+Code: 46. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Unknown function grouping. 
+0.067
+./queries/query_28.sql
+Received exception from server (version 19.5.3):
+Code: 48. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Multiple JOIN do not support asterisks yet. 
+0.027
+./queries/query_29.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.32 GiB (attempt to allocate chunk of 16777216 bytes), maximum: 9.31 GiB. 
+4.170
+./queries/query_2.sql
+Code: 62. DB::Exception: Syntax error: failed at position 70 (line 3, col 2): (select sold_date_sk
+        ,sales_price
+  from (select ws_sold_date_sk sold_date_sk
+              ,ws_ext_sales_price sales_price
+        from web_sales 
+    . Expected identifier
+
+./queries/query_30.sql
+Code: 62. DB::Exception: Syntax error: failed at position 88 (line 3, col 2): (select wr_returning_customer_sk as ctr_customer_sk
+        ,ca_state as ctr_state, 
+ 	sum(wr_return_amt) as ctr_total_return
+ from web_returns
+     ,date_dim
+ . Expected identifier
+
+./queries/query_31.sql
+Code: 62. DB::Exception: Syntax error: failed at position 69 (line 3, col 2): (select ca_county,d_qoy, d_year,sum(ss_ext_sales_price) as store_sales
+ from store_sales,date_dim,customer_address
+ where ss_sold_date_sk = d_date_sk
+  and ss_a. Expected identifier
+
+./queries/query_32.sql
+Code: 62. DB::Exception: Syntax error: failed at position 299 (line 11, col 42): days)
+and d_date_sk = cs_sold_date_sk 
+and cs_ext_discount_amt  
+     > ( 
+         select 
+            1.3 * avg(cs_ext_discount_amt) 
+         from 
+         . Expected one of: alias, AND, OR, token, AS, NOT, BETWEEN, LIKE, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, Comma, QuestionMark
+
+./queries/query_33.sql
+Code: 62. DB::Exception: Syntax error: failed at position 68 (line 2, col 12): (
+ select
+          i_manufact_id,sum(ss_ext_sales_price) total_sales
+ from
+ 	store_sales,
+ 	date_dim,
+         customer_address,
+         item
+ where
+         . Expected identifier
+
+./queries/query_34.sql
+Received exception from server (version 19.5.3):
+Code: 48. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Multiple JOIN do not support asterisks yet. 
+0.040
+./queries/query_35.sql
+Code: 62. DB::Exception: Syntax error: failed at position 656 (line 27, col 16): store_sales,date_dim
+          where c.c_customer_sk = ss_customer_sk and
+                ss_sold_date_sk = d_date_sk and
+                d_year = 1999 and
+    . Expected one of: alias, AND, OR, token, AS, NOT, BETWEEN, LIKE, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, Comma, Dot, QuestionMark
+
+./queries/query_36.sql
+Code: 62. DB::Exception: Syntax error: failed at position 231 (line 7, col 17): (
+ 	partition by grouping(i_category)+grouping(i_class),
+ 	case when grouping(i_class) = 0 then i_category end 
+ 	order by sum(ss_net_profit)/sum(ss_ext_sales_p. Expected one of: expression to parallel process bitmap, UNION ALL, token, FROM, PREWHERE, WHERE, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, FORMAT, TEALIMIT, Comma, ORDER BY, INTO OUTFILE, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_37.sql
+Code: 62. DB::Exception: Syntax error: failed at position 353 (line 9, col 86): days)
+ and i_manufact_id in (678,964,918,849)
+ and inv_quantity_on_hand between 100 and 500
+ and cs_item_sk = i_item_sk
+ group by i_item_id,i_item_desc,i_curren. Expected one of: alias, AND, OR, token, AS, NOT, BETWEEN, LIKE, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, Comma, QuestionMark
+
+./queries/query_38.sql
+Code: 62. DB::Exception: Syntax error: failed at position 354 (line 8, col 3): intersect
+    select distinct c_last_name, c_first_name, d_date
+    from catalog_sales, date_dim, customer
+          where catalog_sales.cs_sold_date_sk = date_. Expected one of: expression to parallel process bitmap, alias, AND, OR, UNION ALL, token, AS, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, LIKE, TEALIMIT, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, QuestionMark, ORDER BY, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_39.sql
+Code: 62. DB::Exception: Syntax error: failed at position 69 (line 3, col 1): (select w_warehouse_name,w_warehouse_sk,i_item_sk,d_moy
+       ,stdev,mean, case mean when 0 then null else stdev/mean end cov
+ from(select w_warehouse_name,w_w. Expected identifier
+
+./queries/query_3.sql
+1998	10003008	exportiunivamalg #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	34002.97
+1998	4003001	exportiedu pack #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	24398.28
+1998	3003001	exportiexporti #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	23904.229999999996
+1998	5004001	edu packscholar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	19681.73
+1998	2001001	amalgimporto #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14342.529999999999
+1998	5003001	exportischolar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	11245.13
+1998	10014017	edu packamalgamalg #17\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	9000.080000000002
+1999	2001001	amalgimporto #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	33467.619999999995
+1999	10014017	edu packamalgamalg #17\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	22050.3
+1999	3003001	exportiexporti #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	21760
+1999	4003001	exportiedu pack #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	20529.589999999997
+1999	10003008	exportiunivamalg #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	19738.35
+1999	5004001	edu packscholar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	17101.49
+1999	5003001	exportischolar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	3904.5399999999995
+2000	5004001	edu packscholar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	43450.32
+2000	4003002	exportiedu pack #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	30805.45
+2000	1004001	corpunivamalg #12\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	29679.620000000003
+2000	3003001	exportiexporti #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	26190.01
+2000	10003008	exportiunivamalg #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	25007.54
+2000	5003001	exportischolar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	23952.129999999997
+2000	6012004	importobrand #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	16751.09
+2000	10014017	edu packexporti #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	16685.739999999998
+2000	6015004	scholarbrand #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14185.739999999998
+2001	1004001	corpunivamalg #12\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	29728.26
+2001	10003008	exportiunivamalg #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	27696.6
+2001	6015004	scholarbrand #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	17758.53
+2001	5003001	maxiunivamalg #9\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	16229.460000000001
+2001	6012004	importobrand #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14883.59
+2001	10014017	edu packexporti #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	8613.779999999999
+2001	4003002	exportiedu pack #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	8136.900000000001
+2001	5004001	importocorp #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	7074.37
+2002	6015004	importoscholar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	42863.44
+2002	6008005	namelesscorp #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	26870.759999999995
+2002	10003008	exportiunivamalg #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	15635.29
+2002	5003001	maxiunivamalg #9\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	15245.070000000002
+2002	5004001	importocorp #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	11685.81
+2002	8004007	edu packnameless #7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	6609.16
+2002	9014011	edu packimporto #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	4689.84
+2.272
+./queries/query_40.sql
+Code: 62. DB::Exception: Syntax error: failed at position 787 (line 21, col 55): days)
+                and (cast ('1998-04-08' as date) + 30 days) 
+ group by
+    w_state,i_item_id
+ order by w_state,i_item_id
+limit 100
+
+. Expected one of: alias, AND, OR, token, AS, NOT, BETWEEN, LIKE, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, Comma, QuestionMark
+
+./queries/query_41.sql
+Received exception from server (version 19.5.3):
+Code: 47. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Unknown identifier: i1.i_manufact, context: query: 'SELECT count() AS item_cnt FROM item  WHERE ((i_manufact = i1.i_manufact) AND (((i_category = 'Women') AND ((i_color = 'orchid') OR (i_color = 'papaya')) AND ((i_units = 'Pound') OR (i_units = 'Lb')) AND ((i_size = 'petite') OR (i_size = 'medium'))) OR ((i_category = 'Women') AND ((i_color = 'burlywood') OR (i_color = 'navy')) AND ((i_units = 'Bundle') OR (i_units = 'Each')) AND ((i_size = 'N/A') OR (i_size = 'extra large'))) OR ((i_category = 'Men') AND ((i_color = 'bisque') OR (i_color = 'azure')) AND ((i_units = 'N/A') OR (i_units = 'Tsp')) AND ((i_size = 'small') OR (i_size = 'large'))) OR ((i_category = 'Men') AND ((i_color = 'chocolate') OR (i_color = 'cornflower')) AND ((i_units = 'Bunch') OR (i_units = 'Gross')) AND ((i_size = 'petite') OR (i_size = 'medium'))))) OR ((i_manufact = i1.i_manufact) AND (((i_category = 'Women') AND ((i_color = 'salmon') OR (i_color = 'midnight')) AND ((i_units = 'Oz') OR (i_units = 'Box')) AND ((i_size = 'petite') OR (i_size = 'medium'))) OR ((i_category = 'Women') AND ((i_color = 'snow') OR (i_color = 'steel')) AND ((i_units = 'Carton') OR (i_units = 'Tbl')) AND ((i_size = 'N/A') OR (i_size = 'extra large'))) OR ((i_category = 'Men') AND ((i_color = 'purple') OR (i_color = 'gainsboro')) AND ((i_units = 'Dram') OR (i_units = 'Unknown')) AND ((i_size = 'small') OR (i_size = 'large'))) OR ((i_category = 'Men') AND ((i_color = 'metallic') OR (i_color = 'forest')) AND ((i_units = 'Gram') OR (i_units = 'Ounce')) AND ((i_size = 'petite') OR (i_size = 'medium')))))' required_names: 'i_size''i1.i_manufact''i_color''i_manufact''i_category''i_units' source_tables: 'item' table_aliases: complex_aliases: 'item_cnt' masked_columns: array_join_columns: source_columns: 'i_category' 'i_manufact' 'i_size' 'i_color' 'i_units' . 
+0.049
+./queries/query_42.sql
+1998	1	Women\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	485053.8600000001
+1998	5	Music\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	429901.06999999966
+1998	3	Children\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	349537.8599999999
+1998	6	Jewelry\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	342518.1900000002
+1998	2	Men\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	292191.23
+1998	7	Home\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	252045.03
+1998	10	Electronics\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	247818.28999999992
+1998	4	Shoes\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	230919.72999999998
+1998	9	Books\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	199259.9299999999
+1998	8	Sports\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	155578.67999999996
+1.947
+./queries/query_43.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.87 GiB (attempt to allocate chunk of 1073741824 bytes), maximum: 9.31 GiB. 
+12.503
+./queries/query_44.sql
+Code: 62. DB::Exception: Syntax error: failed at position 201 (line 4, col 39): (order by rank_col asc) rnk
+           from (select ss_item_sk item_sk,avg(ss_net_profit) rank_col 
+                 from store_sales ss1
+                 where. Expected one of: expression to parallel process bitmap, UNION ALL, token, FROM, PREWHERE, WHERE, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, TEALIMIT, Comma, ORDER BY, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_45.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.36 GiB (attempt to allocate chunk of 67108864 bytes), maximum: 9.31 GiB. 
+3.081
+./queries/query_46.sql
+Received exception from server (version 19.5.3):
+Code: 47. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Unknown identifier: ss_addr_sk, context: query: 'SELECT ss_ticket_number, ss_customer_sk, ca_city AS bought_city, sum(ss_coupon_amt) AS amt, sum(ss_net_profit) AS profit FROM (SELECT * FROM (SELECT * FROM (SELECT * FROM store_sales  CROSS JOIN date_dim )  CROSS JOIN store )  CROSS JOIN household_demographics )  CROSS JOIN customer_address  WHERE (`--store_sales.ss_sold_date_sk` = `--date_dim.d_date_sk`) AND (`--store_sales.ss_store_sk` = `--store.s_store_sk`) AND (`--store_sales.ss_hdemo_sk` = `--household_demographics.hd_demo_sk`) AND (`--store_sales.ss_addr_sk` = ca_address_sk) AND ((`--household_demographics.hd_dep_count` = 5) OR (`--household_demographics.hd_vehicle_count` = 3)) AND (`--date_dim.d_dow` IN (6, 0)) AND (`--date_dim.d_year` IN (1999, 1999 + 1, 1999 + 2)) AND (`--store.s_city` IN ('Midway', 'Fairview', 'Fairview', 'Midway', 'Fairview')) GROUP BY ss_ticket_number, ss_customer_sk, ss_addr_sk, ca_city' required_names: 'ss_coupon_amt''--store.s_city''--date_dim.d_dow''--household_demographics.hd_vehicle_count''--household_demographics.hd_dep_count''ca_city'/'bought_city''--date_dim.d_date_sk''ss_net_profit''--date_dim.d_year''ss_ticket_number''ss_customer_sk''--store_sales.ss_sold_date_sk''--store.s_store_sk''ss_addr_sk''--household_demographics.hd_demo_sk''--store_sales.ss_hdemo_sk''--store_sales.ss_addr_sk''--store_sales.ss_store_sk''ca_address_sk' source_tables: 'customer_address' table_aliases: complex_aliases: 'profit' 'amt' masked_columns: array_join_columns: source_columns: '--store_sales.ss_sold_date_sk' 'ss_customer_sk' '--store_sales.ss_hdemo_sk' '--store_sales.ss_addr_sk' '--store_sales.ss_store_sk' 'ss_ticket_number' 'ss_coupon_amt' 'ss_net_profit' '--date_dim.d_date_sk' '--date_dim.d_year' '--date_dim.d_dow' '--store.s_store_sk' '--store.s_city' '--household_demographics.hd_demo_sk' '--household_demographics.hd_dep_count' '--household_demographics.hd_vehicle_count' . 
+0.039
+./queries/query_47.sql
+Code: 62. DB::Exception: Syntax error: failed at position 67 (line 2, col 11): (
+ select i_category, i_brand,
+        s_store_name, s_company_name,
+        d_year, d_moy,
+        sum(ss_sales_price) sum_sales,
+        avg(sum(ss_sales_pric. Expected identifier
+
+./queries/query_48.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.67 GiB (attempt to allocate chunk of 536870912 bytes), maximum: 9.31 GiB. 
+12.625
+./queries/query_49.sql
+Code: 62. DB::Exception: Syntax error: failed at position 296 (line 14, col 16): (order by return_ratio) as return_rank
+ 	,rank() over (order by currency_ratio) as currency_rank
+ 	from
+ 	(	select ws.ws_item_sk as item
+ 		,(cast(sum(coalesce(. Expected one of: expression to parallel process bitmap, UNION ALL, token, FROM, PREWHERE, WHERE, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, TEALIMIT, Comma, ORDER BY, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_4.sql
+Code: 62. DB::Exception: Syntax error: failed at position 75 (line 2, col 20): (
+ select c_customer_id customer_id
+       ,c_first_name customer_first_name
+       ,c_last_name customer_last_name
+       ,c_preferred_cust_flag customer_prefe. Expected identifier
+
+./queries/query_50.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.42 GiB (attempt to allocate chunk of 134217728 bytes), maximum: 9.31 GiB. 
+2.465
+./queries/query_51.sql
+Code: 62. DB::Exception: Syntax error: failed at position 72 (line 2, col 16): (
+select
+  ws_item_sk item_sk, d_date,
+  sum(sum(ws_sales_price))
+      over (partition by ws_item_sk order by d_date rows between unbounded preceding and curre. Expected identifier
+
+./queries/query_52.sql
+1998	2001002	amalgimporto #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	106826.48999999999
+1998	5003001	exportischolar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	99447.11
+1998	3002001	importoexporti #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	89873.06000000004
+1998	3003001	exportiexporti #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	85142.33999999998
+1998	1003002	exportiamalg #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	82403.47999999997
+1998	1002001	importoamalg #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	79063.26
+1998	5001001	amalgscholar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	76885.68000000001
+1998	4003001	exportiedu pack #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	74733.18000000001
+1998	5002001	importoscholar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	73695.23999999998
+1998	1002002	importoamalg #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	67546.32999999999
+1998	5003002	exportischolar #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	67011.45999999999
+1998	3001001	amalgexporti #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	62910.82000000001
+1998	1004002	edu packamalg #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	60077.43000000001
+1998	1003001	exportiamalg #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	56893.820000000014
+1998	3004001	edu packexporti #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	55842.41
+1998	4004001	edu packedu pack #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	54105.11000000001
+1998	1001002	amalgamalg #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	53484.95999999999
+1998	9015009	scholarunivamalg #9\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	49687.89000000001
+1998	1001001	amalgamalg #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	49195.37999999998
+1998	6016003	corpbrand #3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	48435.16000000001
+1998	2003001	exportiimporto #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	47766.17
+1998	2002001	importoimporto #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	42875.40000000001
+1998	5004002	edu packscholar #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	42787.83000000002
+1998	5001002	amalgscholar #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	41241.509999999995
+1998	7016001	corpnameless #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	38522.850000000006
+1998	1004001	edu packamalg #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	36389.200000000004
+1998	2004002	edu packimporto #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	36278.68
+1998	4001001	amalgedu pack #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	34958.62
+1998	8014005	edu packmaxi #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	34268.54000000001
+1998	9014011	edu packunivamalg #11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	30956.359999999997
+1998	2003002	exportiimporto #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	29606.61
+1998	7004007	edu packbrand #7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	29560.58
+1998	3002002	importoexporti #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	29517.86
+1998	10009015	maxiunivamalg #15\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	29029.579999999994
+1998	9013009	exportiunivamalg #9\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	28696.52
+1998	6006007	corpcorp #7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	27875.37
+1998	6002005	importocorp #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	27816.800000000003
+1998	6011005	amalgbrand #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	27141.86
+1998	10002012	importounivamalg #12\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	26667.3
+1998	4001002	amalgedu pack #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	26534
+1998	10012017	importoamalgamalg #17\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	26445.19
+1998	6009003	maxicorp #3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	26425.850000000002
+1998	3003002	exportiexporti #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	26251.370000000003
+1998	10010013	univamalgamalg #13\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	24647.559999999998
+1998	6005001	scholarcorp #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	23992.920000000002
+1998	6011001	amalgbrand #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	22993.84
+1998	10004004	edu packunivamalg #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	22497.96
+1998	6003008	exporticorp #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	22282.65
+1998	10013015	exportiamalgamalg #15\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	21829.260000000002
+1998	7001005	amalgbrand #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	21764.72
+1998	4002001	importoedu pack #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	21438.52
+1998	7010009	univnameless #9\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	21261.449999999997
+1998	9016003	corpunivamalg #3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	20372.53
+1998	10004001	edu packunivamalg #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	20134.1
+1998	6010005	univbrand #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	20129.1
+1998	8016004	corpmaxi #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	19656.96
+1998	7007004	brandbrand #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	19562.879999999997
+1998	8004003	edu packnameless #3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	19406.969999999998
+1998	4004002	edu packedu pack #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	19150.3
+1998	6008007	namelesscorp #7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	18906.43
+1998	8005008	scholarnameless #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	18517.5
+1998	9015011	scholarunivamalg #11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	18320.300000000003
+1998	7010003	univnameless #3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	17229.14
+1998	8004009	edu packnameless #9\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	16502.06
+1998	2001001	amalgimporto #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	15281.54
+1998	9012008	importounivamalg #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14995.769999999999
+1998	9012003	importounivamalg #3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14901.719999999998
+1998	10012011	importoamalgamalg #11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14843.009999999998
+1998	5002002	importoscholar #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14792.330000000004
+1998	6015006	scholarbrand #6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14543.050000000001
+1998	7009010	maxibrand #10\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14384.689999999999
+1998	6008005	namelesscorp #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14179.050000000001
+1998	5004001	edu packscholar #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	14039.91
+1998	8011009	amalgmaxi #9\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	13627.19
+1998	6012008	importobrand #8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	13565.23
+1998	2004001	edu packimporto #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	13556.34
+1998	10015004	scholaramalgamalg #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	13450.630000000001
+1998	7012003	importonameless #3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	13134.949999999999
+1998	7014001	edu packnameless #1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	12067.899999999998
+1998	10003004	exportiunivamalg #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	11785.42
+1998	7012010	importonameless #10\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	11588.169999999998
+1998	7008009	namelessbrand #9\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	11459.429999999998
+1998	8013007	exportimaxi #7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	11225.14
+1998	9008005	namelessmaxi #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	10820.58
+1998	10013013	exportiamalgamalg #13\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	10804.729999999998
+1998	7013007	exportinameless #7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	10166.66
+1998	7016007	corpnameless #7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	9890.94
+1998	8003010	exportinameless #10\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	9760.869999999999
+1998	10015013	scholaramalgamalg #13\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	9315.09
+1998	6007003	brandcorp #3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	9156.59
+1998	10012004	importoamalgamalg #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	9099.32
+1998	6008002	namelesscorp #2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	8952.65
+1998	6002003	importocorp #3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	8853.050000000001
+1998	7015007	scholarnameless #7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	8147.47
+1998	9012005	importounivamalg #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	7806.14
+1998	8005005	scholarnameless #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	7373.65
+1998	7004009	edu packbrand #9\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	7275.430000000001
+1998	10003016	exportiunivamalg #16\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	7269.139999999999
+1998	7010004	univnameless #4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	6027.77
+1998	6012005	importobrand #5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	4041.4500000000007
+2.037
+./queries/query_53.sql
+Code: 62. DB::Exception: Syntax error: failed at position 157 (line 5, col 31): (partition by i_manufact_id) avg_quarterly_sales
+from item, store_sales, date_dim, store
+where ss_item_sk = i_item_sk and
+ss_sold_date_sk = d_date_sk and
+ss_sto. Expected one of: expression to parallel process bitmap, UNION ALL, token, FROM, PREWHERE, WHERE, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, TEALIMIT, Comma, ORDER BY, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_54.sql
+Code: 62. DB::Exception: Syntax error: failed at position 78 (line 2, col 22): (
+ select distinct c_customer_sk
+        , c_current_addr_sk
+ from   
+        ( select cs_sold_date_sk sold_date_sk,
+                 cs_bill_customer_sk custom. Expected identifier
+
+./queries/query_55.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.87 GiB (attempt to allocate chunk of 1073741824 bytes), maximum: 9.31 GiB. 
+10.854
+./queries/query_56.sql
+Code: 62. DB::Exception: Syntax error: failed at position 68 (line 2, col 12): (
+ select i_item_id,sum(ss_ext_sales_price) total_sales
+ from
+ 	store_sales,
+ 	date_dim,
+         customer_address,
+         item
+ where i_item_id in (select
+  . Expected identifier
+
+./queries/query_57.sql
+Code: 62. DB::Exception: Syntax error: failed at position 67 (line 2, col 11): (
+ select i_category, i_brand,
+        cc_name,
+        d_year, d_moy,
+        sum(cs_sales_price) sum_sales,
+        avg(sum(cs_sales_price)) over
+          (p. Expected identifier
+
+./queries/query_58.sql
+Code: 62. DB::Exception: Syntax error: failed at position 75 (line 3, col 2): (select i_item_id item_id
+        ,sum(ss_ext_sales_price) ss_item_rev 
+ from store_sales
+     ,item
+     ,date_dim
+ where ss_item_sk = i_item_sk
+   and d_date . Expected identifier
+
+./queries/query_59.sql
+Code: 62. DB::Exception: Syntax error: failed at position 71 (line 3, col 2): (select d_week_seq,
+        ss_store_sk,
+        sum(case when (d_day_name='Sunday') then ss_sales_price else null end) sun_sales,
+        sum(case when (d_day_. Expected identifier
+
+./queries/query_5.sql
+Code: 62. DB::Exception: Syntax error: failed at position 69 (line 3, col 2): (select s_store_id,
+        sum(sales_price) as sales,
+        sum(profit) as profit,
+        sum(return_amt) as returns,
+        sum(net_loss) as profit_loss
+ . Expected identifier
+
+./queries/query_60.sql
+Code: 62. DB::Exception: Syntax error: failed at position 68 (line 2, col 12): (
+ select
+          i_item_id,sum(ss_ext_sales_price) total_sales
+ from
+ 	store_sales,
+ 	date_dim,
+         customer_address,
+         item
+ where
+         i_it. Expected identifier
+
+./queries/query_61.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.57 GiB (attempt to allocate chunk of 536870912 bytes), maximum: 9.31 GiB. 
+9.647
+./queries/query_62.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.32 GiB (attempt to allocate chunk of 1073741824 bytes), maximum: 9.31 GiB. 
+8.464
+./queries/query_63.sql
+Code: 62. DB::Exception: Syntax error: failed at position 182 (line 5, col 45): (partition by i_manager_id) avg_monthly_sales
+      from item
+          ,store_sales
+          ,date_dim
+          ,store
+      where ss_item_sk = i_item_sk
+   . Expected one of: expression to parallel process bitmap, UNION ALL, token, FROM, PREWHERE, WHERE, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, TEALIMIT, Comma, ORDER BY, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_64.sql
+Code: 62. DB::Exception: Syntax error: failed at position 72 (line 3, col 2): (select cs_item_sk
+        ,sum(cs_ext_list_price) as sale,sum(cr_refunded_cash+cr_reversed_charge+cr_store_credit) as refund
+  from catalog_sales
+      ,catalo. Expected identifier
+
+./queries/query_65.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.77 GiB (attempt to allocate chunk of 1073741824 bytes), maximum: 9.31 GiB. 
+11.144
+./queries/query_66.sql
+Received exception from server (version 19.5.3):
+Code: 184. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Aggregate function sum(jan_sales) is found inside another aggregate function in query. 
+0.086
+./queries/query_67.sql
+Code: 62. DB::Exception: Syntax error: failed at position 290 (line 12, col 26): (partition by i_category order by sumsales desc) rk
+      from (select i_category
+                  ,i_class
+                  ,i_brand
+                  ,i_pro. Expected one of: expression to parallel process bitmap, UNION ALL, token, FROM, PREWHERE, WHERE, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, TEALIMIT, Comma, ORDER BY, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_68.sql
+Received exception from server (version 19.5.3):
+Code: 47. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Unknown identifier: ss_addr_sk, context: query: 'SELECT ss_ticket_number, ss_customer_sk, ca_city AS bought_city, sum(ss_ext_sales_price) AS extended_price, sum(ss_ext_list_price) AS list_price, sum(ss_ext_tax) AS extended_tax FROM (SELECT * FROM (SELECT * FROM (SELECT * FROM store_sales  CROSS JOIN date_dim )  CROSS JOIN store )  CROSS JOIN household_demographics )  CROSS JOIN customer_address  WHERE (`--store_sales.ss_sold_date_sk` = `--date_dim.d_date_sk`) AND (`--store_sales.ss_store_sk` = `--store.s_store_sk`) AND (`--store_sales.ss_hdemo_sk` = `--household_demographics.hd_demo_sk`) AND (`--store_sales.ss_addr_sk` = ca_address_sk) AND ((`--date_dim.d_dom` >= 1) AND (`--date_dim.d_dom` <= 2)) AND ((`--household_demographics.hd_dep_count` = 5) OR (`--household_demographics.hd_vehicle_count` = 3)) AND (`--date_dim.d_year` IN (1999, 1999 + 1, 1999 + 2)) AND (`--store.s_city` IN ('Midway', 'Fairview')) GROUP BY ss_ticket_number, ss_customer_sk, ss_addr_sk, ca_city' required_names: 'ss_ext_sales_price''--store.s_city''--household_demographics.hd_vehicle_count''--household_demographics.hd_dep_count''ss_ext_list_price''--date_dim.d_dom''ca_city'/'bought_city''--date_dim.d_date_sk''--date_dim.d_year''ss_ticket_number''ss_customer_sk''ss_ext_tax''--store_sales.ss_sold_date_sk''--store.s_store_sk''ss_addr_sk''--household_demographics.hd_demo_sk''--store_sales.ss_hdemo_sk''--store_sales.ss_addr_sk''--store_sales.ss_store_sk''ca_address_sk' source_tables: 'customer_address' table_aliases: complex_aliases: 'extended_tax' 'extended_price' 'list_price' masked_columns: array_join_columns: source_columns: '--store_sales.ss_sold_date_sk' 'ss_customer_sk' '--store_sales.ss_hdemo_sk' '--store_sales.ss_addr_sk' '--store_sales.ss_store_sk' 'ss_ticket_number' 'ss_ext_sales_price' 'ss_ext_list_price' 'ss_ext_tax' '--date_dim.d_date_sk' '--date_dim.d_year' '--date_dim.d_dom' '--store.s_store_sk' '--store.s_city' '--household_demographics.hd_demo_sk' '--household_demographics.hd_dep_count' '--household_demographics.hd_vehicle_count' . 
+0.019
+./queries/query_69.sql
+Code: 62. DB::Exception: Syntax error: failed at position 440 (line 18, col 16): store_sales,date_dim
+          where c.c_customer_sk = ss_customer_sk and
+                ss_sold_date_sk = d_date_sk and
+                d_year = 1999 and
+    . Expected one of: alias, AND, OR, token, AS, NOT, BETWEEN, LIKE, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, Comma, Dot, QuestionMark
+
+./queries/query_6.sql
+Received exception from server (version 19.5.3):
+Code: 48. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Multiple JOIN do not support asterisks yet. 
+0.018
+./queries/query_70.sql
+Code: 62. DB::Exception: Syntax error: failed at position 200 (line 7, col 17): (
+ 	partition by grouping(s_state)+grouping(s_county),
+ 	case when grouping(s_county) = 0 then s_state end 
+ 	order by sum(ss_net_profit) desc) as rank_within_p. Expected one of: expression to parallel process bitmap, UNION ALL, token, FROM, PREWHERE, WHERE, IMPLICITWHERE, WITH, HAVING, LIMIT, SETTINGS, FORMAT, TEALIMIT, Comma, ORDER BY, INTO OUTFILE, TEALIMIT clause, GROUP BY, STEPEXECUTE clause, STEPEXECUTE BY, BITMAPEXECUTE BY, INTERESTEVENTS clause, INTEREST EVENTS
+
+./queries/query_71.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.34 GiB (attempt to allocate chunk of 67108864 bytes), maximum: 9.31 GiB. 
+2.515
+./queries/query_72.sql
+Received exception from server (version 19.5.3):
+Code: 48. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Multiple JOIN do not support asterisks yet. 
+0.004
+./queries/query_73.sql
+Received exception from server (version 19.5.3):
+Code: 48. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Multiple JOIN do not support asterisks yet. 
+0.013
+./queries/query_74.sql
+Code: 62. DB::Exception: Syntax error: failed at position 76 (line 2, col 20): (
+ select c_customer_id customer_id
+       ,c_first_name customer_first_name
+       ,c_last_name customer_last_name
+       ,d_year as year
+       ,max(ss_net_pa. Expected identifier
+
+./queries/query_75.sql
+Code: 62. DB::Exception: Syntax error: failed at position 75 (line 2, col 19): (
+ SELECT d_year
+       ,i_brand_id
+       ,i_class_id
+       ,i_category_id
+       ,i_manufact_id
+       ,SUM(sales_cnt) AS sales_cnt
+       ,SUM(sales_amt) AS. Expected identifier
+
+./queries/query_76.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.45 GiB (attempt to allocate chunk of 268435456 bytes), maximum: 9.31 GiB. 
+3.635
+./queries/query_77.sql
+Code: 62. DB::Exception: Syntax error: failed at position 69 (line 3, col 2): (select s_store_sk,
+         sum(ss_ext_sales_price) as sales,
+         sum(ss_net_profit) as profit
+ from store_sales,
+      date_dim,
+      store
+ where ss_so. Expected identifier
+
+./queries/query_78.sql
+Code: 62. DB::Exception: Syntax error: failed at position 70 (line 3, col 3): (select d_year AS ws_sold_year, ws_item_sk,
+    ws_bill_customer_sk ws_customer_sk,
+    sum(ws_quantity) ws_qty,
+    sum(ws_wholesale_cost) ws_wc,
+    sum(ws_sa. Expected identifier
+
+./queries/query_79.sql
+Received exception from server (version 19.5.3):
+Code: 47. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Unknown identifier: s_city, context: query: 'SELECT c_last_name, c_first_name, substr(s_city, 1, 30), ss_ticket_number, amt, profit FROM (SELECT ss_ticket_number, ss_customer_sk, `--store.s_city` AS `store.s_city`, sum(ss_coupon_amt) AS amt, sum(ss_net_profit) AS profit FROM (SELECT * FROM (SELECT * FROM store_sales  CROSS JOIN date_dim )  CROSS JOIN store )  CROSS JOIN household_demographics  WHERE (`--store_sales.ss_sold_date_sk` = `--date_dim.d_date_sk`) AND (`--store_sales.ss_store_sk` = `--store.s_store_sk`) AND (`--store_sales.ss_hdemo_sk` = household_demographics.hd_demo_sk) AND ((household_demographics.hd_dep_count = 8) OR (household_demographics.hd_vehicle_count > 0)) AND (`--date_dim.d_dow` = 1) AND (`--date_dim.d_year` IN (1998, 1998 + 1, 1998 + 2)) AND ((`--store.s_number_employees` >= 200) AND (`--store.s_number_employees` <= 295)) GROUP BY ss_ticket_number, ss_customer_sk, ss_addr_sk, store.s_city) AS ms  CROSS JOIN customer  WHERE ss_customer_sk = c_customer_sk ORDER BY c_last_name ASC, c_first_name ASC, substr(s_city, 1, 30) ASC, profit ASC LIMIT 100' required_names: 's_city''c_first_name''c_last_name''ss_customer_sk''ss_ticket_number''amt''c_customer_sk''profit' source_tables: 'ms' 'customer' table_aliases: 'ms' complex_aliases: masked_columns: array_join_columns: source_columns: 'ss_ticket_number' 'ss_customer_sk' 'amt' 'profit' . 
+0.100
+./queries/query_7.sql
+Received exception from server (version 19.5.3):
+Code: 241. DB::Exception: Received from localhost:9001, 127.0.0.1. DB::Exception: Memory limit (for query) exceeded: would use 9.41 GiB (attempt to allocate chunk of 134217728 bytes), maximum: 9.31 GiB. 
+6.429
+./queries/query_80.sql
+Code: 62. DB::Exception: Syntax error: failed at position 70 (line 3, col 2): (select  s_store_id as store_id,
+          sum(ss_ext_sales_price) as sales,
+          sum(coalesce(sr_return_amt, 0)) as returns,
+          sum(ss_net_profit -. Expected identifier
+
+./queries/query_81.sql
+Code: 62. DB::Exception: Syntax error: failed at position 88 (line 3, col 2): (select cr_returning_customer_sk as ctr_customer_sk
+        ,ca_state as ctr_state, 
+ 	sum(cr_return_amt_inc_tax) as ctr_total_return
+ from catalog_returns
+    . Expected identifier
+
+./queries/query_82.sql
+Code: 62. DB::Exception: Syntax error: failed at position 349 (line 9, col 86): days)
+ and i_manufact_id in (437,129,727,663)
+ and inv_quantity_on_hand between 100 and 500
+ and ss_item_sk = i_item_sk
+ group by i_item_id,i_item_desc,i_curren. Expected one of: alias, AND, OR, token, AS, NOT, BETWEEN, LIKE, IS, NOT LIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, Comma, QuestionMark
+
+./queries/query_83.sql
+Code: 62. DB::Exception: Syntax error: failed at position 75 (line 3, col 2): (select i_item_id item_id,
+        sum(sr_return_quantity) sr_item_qty
+ from store_returns,
+      item,
+      date_dim
+ where sr_item_sk = i_item_sk
+ and   d_da. Expected identifier
+
+./queries/query_84.sql
+Error on processing query: -- start query 1 in stream 0 using template query84.tpl
+select  c_customer_id as customer_id
+       , coalesce(c_last_name,'') || ', ' || coalesce(c_first_name,'') as customername
+ from customer
+     ,customer_address
+     ,customer_demographics
+     ,household_demographics
+     ,income_band
+     ,store_returns
+ where ca_city	        =  'Hopewell'
+   and c_current_addr_sk = ca_address_sk
+   and ib_lower_bound   >=  32287
+   and ib_upper_bound   <=  32287 + 50000
+   and ib_income_band_sk = hd_income_band_sk
+   and cd_demo_sk = c_current_cdemo_sk
+   and hd_demo_sk = c_current_hdemo_sk
+   and sr_cdemo_sk = cd_demo_sk
+ order by c_customer_id
+ limit 100
+
+
+Code: 32, e.displayText() = DB::Exception: Attempt to read after eof: while receiving packet from localhost:9001, 127.0.0.1, Stack trace:
+
+0. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(StackTrace::StackTrace()+0x16) [0x4dcc8a6]
+1. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(DB::Exception::Exception(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x29) [0x3d0bc49]
+2. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(DB::throwReadAfterEOF()+0x4b) [0x37ec6ed]
+3. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse() [0x3ac9169]
+4. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(DB::Client::receiveAndProcessPacket()+0x2d) [0x3dbe6ad]
+5. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(DB::Client::receiveResult()+0x154) [0x3dc1644]
+6. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(DB::Client::processSingleQuery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::shared_ptr<DB::IAST>)+0x874) [0x3dc24c4]
+7. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(DB::Client::process(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x4fc) [0x3dc366c]
+8. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(DB::Client::mainImpl()+0x1ae3) [0x3dc7843]
+9. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(DB::Client::main(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)+0x15) [0x3cbc9f5]
+10. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(Poco::Util::Application::run()+0x29) [0x9732d59]
+11. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(mainEntryClickHouseClient(int, char**)+0x34) [0x3d5bff4]
+12. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(main+0x307) [0x3cb4267]
+13. /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fedbd2132e1]
+14. /home/wangfenjin/gocode/src/code.byted.org/dp/ClickHouse//build/dbms/programs/clickhouse(_start+0x2a) [0x3d0356a]
+ (version 19.5.3.8)./queries/query_85.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_86.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_87.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_88.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_89.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_8.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_90.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_91.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_92.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_93.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_94.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_95.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_96.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_97.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_98.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_99.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+
+./queries/query_9.sql
+Code: 210. DB::NetException: Connection refused (localhost:9001, 127.0.0.1)
+

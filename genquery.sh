@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-SCALE="10000"
+SCALE="1"
 TEMPLATE_DIR="../query_templates"
 OUTPUT_DIR="queries"
 QUERY_ID=""
@@ -17,6 +17,8 @@ function generate_query()
     -TEMPLATE "query$QUERY_ID.tpl"
     mv "$OUTPUT_DIR/query_0.sql" "$OUTPUT_DIR/query_$QUERY_ID.sql"
 }
+
+#-DIALECT netezza \
 
 #unsupported="87 17 38 8 18 22 27 21 16 32 37 40 82 92 94 12 20 36 49 44 53 63 67 70 86 89 98 1 2 4 5 11 14 23 24 30 31 33 39 47 51 54 56 57 58 59 60 64 74 75 77 78 80 81 83 95 97 13 6"
 #unsupported="87 17 38 8 18 22 27 21 16 32 37 40 82 92 94 12 20 36 49 44 53 63 67 70 86 89 98 1 2 4 5 11 14 23 24 30 31 33 39 47 51 54 56 57 58 59 60 64 74 75 77 78 80 81 83 95 97"
